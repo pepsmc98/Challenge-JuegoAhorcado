@@ -1,0 +1,302 @@
+
+
+#header-juego{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#img-logo{
+    margin-left: 80px;
+}
+
+
+#main-juego{
+    max-width: 1200px;
+    max-height: 800px;
+}
+
+
+
+#section-juego{
+    width: 100%;
+    height: 84%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#ahorcado{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas{
+    background-color: white;
+    width:680px;
+    height:428px;
+}
+
+.mensaje-final{
+    position:absolute;
+    width: 100vw;
+    height: 80vh;
+    background-color:#3334;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-final-gano{
+    font-size: 2em;
+    color:#0f0;
+    font-weight: bold;
+    background-color: red;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.mensaje-final-perdio{
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding:10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.mensaje-final-perdio-pala{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top:5px;
+}
+
+#imaginario{
+    border:none;
+    background-color: #E5E5E5;
+}
+
+#palabra{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5px;
+}
+
+.letras{
+    width: 50px;
+    height: 100%;
+    border-bottom:4px solid red;
+    margin:0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+   
+}
+
+.p-letras{  
+    font-size: 2.5em;
+    font-weight: bold;
+    color: red;
+    border:none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#letras-error{
+    width: 100%;
+    height: 50px;
+    margin:10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error{
+    height: 50px;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: blue;
+}
+
+
+#section-btn-juego{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.btn-juego{
+    width: 320px;
+    height: 67px;
+    border-radius: 30px;
+    border:1px solid red;
+}
+
+#btn-nuevo{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border:2px solid red;
+}
+
+#btn-desistir{
+    color:red;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width:780px){
+    #canvas{
+        background-color: white;
+        max-width: 400px;
+        min-width: 400px;
+        height: 400px;
+    }
+    #palabra{
+        align-items: flex-end;
+        margin-top:5px
+    }
+
+    .letras{
+        margin-top:0px;
+        font-size: 0.5em;
+        font-weight: bold;
+        color: red;
+        border-radius:30px;
+    }
+    .p-letras{  
+        font-size: 2.5em;
+        font-weight: bold;
+        color: red;
+        border:none;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+}   
+
+
+
+@media screen and (max-width:430px){
+
+    #header-juego{
+        height: 10vh;
+    }
+    #main-juego{
+        max-width: 100%;
+        max-height: auto;
+    }
+    
+    #img-logo{
+        margin-left: 40px;
+    }
+    #canvas{
+        width: 250px;
+        height: 300px;
+    }
+    
+
+    #section-btn-juego{
+        width: 100%;
+        flex-wrap: wrap;
+        height: 120px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-juego{
+        width: 300px;
+        height: 50px;
+        border-radius: 30px;
+        border:1px solid red;
+    }
+
+    #palabra{
+        align-items: flex-end;
+        margin-top:5px
+    }
+
+    .letras{
+        margin-top:0px;
+        font-size: 0.5em;
+        font-weight: bold;
+        color: red;
+    }
+
+    .p-letras{  
+        font-size: 2.5em;
+        font-weight: bold;
+        color: red;
+        border:none;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .mensaje-final{
+        position:absolute;
+        width: 100vw;
+        height: 60vh;
+        background-color:#3334;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mensaje-final-gano{
+        font-size: 2em;
+        color:#0f0;
+        font-weight: bold;
+        background-color:red;
+        padding:10px;
+        border-radius: 20px;
+    }
+    
+    .mensaje-final-perdio{
+        font-size: 2em;
+        color:white;
+        font-weight: bold;
+        background-color:red;
+        padding:10px;
+        border-radius: 20px;
+    }
+    
+}
